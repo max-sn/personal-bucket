@@ -1,37 +1,19 @@
 # Scoop Bucket Template
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/max-sn/personal-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/max-sn/personal-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/max-sn/personal-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/max-sn/personal-bucket/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+This bucket contains packages that I (@max-sn) use or wanted to try personally.
 
-## How do I use this template?
-
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
+* [Gaphor](https://gaphor.org/): A UML, SysML, RAAML, and C4 modeling application.
+* [kroki-cli](https://kroki.io/):
 
 ## How do I install these manifests?
 
 After manifests have been committed and pushed, run the following:
 
 ```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+scoop bucket add personal-bucket https://github.com/max-sn/personal-bucket
+scoop install personal-bucket/<manifestname>
 ```
 
 ## How do I contribute new manifests?
