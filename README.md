@@ -5,7 +5,7 @@
 This bucket contains packages that I (@max-sn) use or wanted to try personally.
 
 * [Gaphor](https://gaphor.org/): A UML, SysML, RAAML, and C4 modeling application.
-* [kroki-cli](https://kroki.io/):
+* [kroki-cli](https://kroki.io/): A CLI for <https://kroki.io>.
 
 ## How do I install these manifests?
 
